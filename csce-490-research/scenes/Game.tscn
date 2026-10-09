@@ -424,6 +424,24 @@ position = Vector2(251, -24)
 [node name="Coin" parent="Coins" unique_id=511385577 instance=ExtResource("4_78awf")]
 position = Vector2(39, -29)
 
+[node name="Coin15" parent="Coins" unique_id=1099718777 instance=ExtResource("4_78awf")]
+position = Vector2(-239, -181)
+
+[node name="Coin18" parent="Coins" unique_id=1572429552 instance=ExtResource("4_78awf")]
+position = Vector2(-159, -197)
+
+[node name="Coin19" parent="Coins" unique_id=534179038 instance=ExtResource("4_78awf")]
+position = Vector2(-318, -141)
+
+[node name="Coin20" parent="Coins" unique_id=2146272896 instance=ExtResource("4_78awf")]
+position = Vector2(-358, -33)
+
+[node name="Coin16" parent="Coins" unique_id=1218000143 instance=ExtResource("4_78awf")]
+position = Vector2(-199, -24)
+
+[node name="Coin17" parent="Coins" unique_id=146789647 instance=ExtResource("4_78awf")]
+position = Vector2(-168, -43)
+
 [node name="Coin2" parent="Coins" unique_id=476628747 instance=ExtResource("4_78awf")]
 position = Vector2(540, -128)
 
