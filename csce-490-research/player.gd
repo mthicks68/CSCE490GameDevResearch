@@ -3,6 +3,8 @@ extends CharacterBody2D
 
 const SPEED = 130.0
 const JUMP_VELOCITY = -300.0
+const STOMP_FORCE = 100
+var is_stomping = false
 
 @onready var animated_sprite : AnimatedSprite2D = $AnimatedSprite2D
 
@@ -15,7 +17,16 @@ func _physics_process(delta: float) -> void:
 	# Handle jump.
 	if Input.is_action_just_pressed("jump") and is_on_floor():
 		velocity.y = JUMP_VELOCITY
+		
+	# Handles stomp action
+	
+	if Input.is_action_just_pressed("stomp") and (not is_on_floor()):
+		is_stomping = true
+		velocity = get_gravity() * delta * 100
+	else:
+		is_stomping = false
 
+	
 	# Get input direction: -1, 0, 1
 	var direction := Input.get_axis("move_left", "move_right")
 	
