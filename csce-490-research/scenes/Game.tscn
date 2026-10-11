@@ -8,6 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://vgdip86ngjom" path="res://scenes/kilzone.tscn" id="5_s0nni"]
 [ext_resource type="PackedScene" uid="uid://cyk7epxyw4px0" path="res://scenes/slime.tscn" id="6_aug50"]
 [ext_resource type="FontFile" uid="uid://daawhq53lpups" path="res://assets/fonts/PixelOperator8.ttf" id="8_g4kob"]
+[ext_resource type="PackedScene" uid="uid://d0hr60ehg3q8j" path="res://scenes/breakable_box.tscn" id="9_g4kob"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_s0nni"]
 texture = ExtResource("2_qbsmt")
@@ -515,3 +516,6 @@ scale = Vector2(6.924426, 0.7571363)
 position = Vector2(1.7875633, 15.849194)
 scale = Vector2(0.9999999, 0.99999994)
 shape = SubResource("RectangleShape2D_8ejyf")
+
+[node name="BreakableBox" parent="." unique_id=1251704135 instance=ExtResource("9_g4kob")]
+position = Vector2(55, -39)

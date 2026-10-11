@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://d0hr60ehg3q8j"]
+
+[ext_resource type="Texture2D" uid="uid://3jrhynxivwcj" path="res://icon.svg" id="1_oigvo"]
+[ext_resource type="Script" uid="uid://dvqvsgaa3miae" path="res://scripts/breakable_box.gd" id="1_qfdoi"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bk2gh"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cvi5v"]
+size = Vector2(20, 18.38859)
+
+[node name="BreakableBox" type="StaticBody2D" unique_id=1251704135]
+scale = Vector2(1.6670029, 1.6670029)
+script = ExtResource("1_qfdoi")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1056331555]
+scale = Vector2(0.057659186, 0.057659186)
+texture = ExtResource("1_oigvo")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1228105538]
+scale = Vector2(0.3624915, 0.37322652)
+shape = SubResource("RectangleShape2D_bk2gh")
+
+[node name="Stomp Detector" type="Area2D" parent="." unique_id=1998701098]
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Stomp Detector" unique_id=1655842078]
+position = Vector2(0, -0.79643863)
+scale = Vector2(0.36243394, 0.5005791)
+shape = SubResource("RectangleShape2D_cvi5v")
