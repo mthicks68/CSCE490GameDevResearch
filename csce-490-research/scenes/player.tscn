@@ -178,7 +178,7 @@ script = ExtResource("1_g2els")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=969469259]
 position = Vector2(0, -12)
 sprite_frames = SubResource("SpriteFrames_8ejyf")
-animation = &"jump"
+animation = &"run"
 autoplay = "idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1852505865]
