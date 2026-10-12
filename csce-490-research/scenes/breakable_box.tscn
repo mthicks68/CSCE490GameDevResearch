@@ -27,3 +27,5 @@ collision_mask = 2
 position = Vector2(0, -0.79643863)
 scale = Vector2(0.36243394, 0.5005791)
 shape = SubResource("RectangleShape2D_cvi5v")
+
+[connection signal="body_entered" from="Stomp Detector" to="." method="_on_stomp_detector_body_entered"]
