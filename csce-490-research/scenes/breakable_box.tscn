@@ -2,7 +2,6 @@
 
 [ext_resource type="Texture2D" uid="uid://3jrhynxivwcj" path="res://icon.svg" id="1_oigvo"]
 [ext_resource type="Script" uid="uid://dvqvsgaa3miae" path="res://scripts/breakable_box.gd" id="1_qfdoi"]
-[ext_resource type="Script" uid="uid://d2xmfqtqrcwbt" path="res://scenes/stomp_detector.gd" id="3_3hp1w"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bk2gh"]
 
@@ -23,11 +22,8 @@ shape = SubResource("RectangleShape2D_bk2gh")
 
 [node name="Stomp Detector" type="Area2D" parent="." unique_id=1998701098]
 collision_mask = 2
-script = ExtResource("3_3hp1w")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Stomp Detector" unique_id=1655842078]
 position = Vector2(0, -0.79643863)
 scale = Vector2(0.36243394, 0.5005791)
 shape = SubResource("RectangleShape2D_cvi5v")
-
-[connection signal="body_entered" from="Stomp Detector" to="." method="_on_stomp_detector_body_entered"]
